@@ -1,0 +1,107 @@
+footer {
+  background-color: var(--bg-second-color);
+  margin-top: 5rem;
+  padding: 1.2rem 0;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .row .col {
+  flex: 1;
+}
+
+footer .row .col:not(:first-child) {
+  text-align: center;
+}
+
+footer .row .col:first-child a {
+  display: flex;
+  align-items: center;
+}
+
+footer .row .col:first-child img {
+  width: 300px;
+}
+
+footer .row .col:first-child .content {
+  padding: 1.5rem 0;
+}
+
+footer .row .col:first-child .content p {
+  letter-spacing: 1.3px;
+}
+
+footer .row .col h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+footer .row .col ul li:not(:last-child) {
+  margin-bottom: 0.4rem;
+}
+
+footer .row .col ul li a {
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+footer .row .col ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .row .col:last-child > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .row .col:last-child > div a {
+  display: flex;
+  padding: 10px;
+  background-color: var(--bg-main-color);
+  border-radius: 0.4rem;
+  transition: all 0.4s;
+}
+
+footer .row .col:last-child > div a:hover {
+  transform: scale(1.2);
+}
+
+footer .row .col:last-child > div a svg {
+  font-size: 1.5rem;
+}
+
+.copyrights {
+  padding-top: 1.2rem;
+  text-align: center;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .row:first-child .col {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  footer .row .col h3 {
+    margin-bottom: 0.6rem;
+  }
+
+  footer .row .col:first-child .content {
+    padding-bottom: 0;
+  }
+
+  footer .row .col:first-child a {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,95 @@
+.checkoutItems {
+  margin: 6.2rem 0;
+}
+
+.checkoutItems .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.checkoutItems .col .formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.checkoutItems .col .formGroup label {
+  letter-spacing: 1.2px;
+  margin-bottom: 4px;
+}
+
+.checkoutItems .col .formGroup input {
+  height: 40px;
+  padding: 5px 15px;
+  outline: none;
+  border: 1px solid var(--main-color);
+  border-radius: 1rem;
+  background-color: transparent;
+  width: 280px;
+}
+
+.checkout {
+  text-align: center;
+  margin-top: 1.4rem;
+  border-radius: 1rem;
+  background-color: var(--main-color);
+  color: var(--bg-main-color);
+}
+
+.checkout:hover {
+  background-color: var(--bg-main-color);
+  color: var(--main-color);
+}
+
+.totalCart {
+  box-shadow: 0 0 4px var(--main-color);
+  padding: 10px;
+  border-radius: 0.7rem;
+  width: 300px;
+}
+
+.totalCart h2 {
+  text-align: center;
+  margin-bottom: 1.4rem;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.totalCart h2 span {
+  background-color: var(--bg-second-color);
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+.totalCart .totalContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.1rem;
+  font-size: 18px;
+  gap: 10px;
+  align-items: center;
+}
+
+.total {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total p {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.total span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .checkoutItems .row {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+}

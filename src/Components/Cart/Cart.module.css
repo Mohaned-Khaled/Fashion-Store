@@ -1,0 +1,94 @@
+.cart {
+  margin: 4.5rem 0;
+}
+
+.cart .row .col h2 {
+  text-align: center;
+  letter-spacing: 1.3px;
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+
+.cart .row .col a {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.firstCol {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cart .col .topCol {
+  text-align: right;
+}
+
+.cart .col .topCol button {
+  text-align: right;
+  margin-bottom: 1.5rem;
+}
+
+.cart .col .middleCol {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart .col .middleCol img {
+  width: 300px;
+  border-radius: 1.2rem;
+}
+
+.cart .col .middleCol .left,
+.cart .col .middleCol .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.cart .col .middleCol .right {
+  flex-direction: column;
+}
+
+.cart .col .middleCol .right h3 {
+  font-size: 30px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.cart .col .middleCol .right span {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart .row .col .checkout {
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .middleCol {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .cart .row .col .checkout {
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-inline: auto;
+  }
+
+  .cart .col .middleCol .right span {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cart .row .col h2 {
+    font-size: 25px;
+  }
+}
