@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Fashion Store! Check Live: [https://mohanad-fashion-store.netlify.app/)
+Ecommerce react application using react redux, react router, hooks and API
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
